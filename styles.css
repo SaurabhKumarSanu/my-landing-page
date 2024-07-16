@@ -1,0 +1,88 @@
+/* Reset and global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(91, 81, 81);
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: #ddd2d2;
+    color: green;
+    padding: 1rem 0;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+/* Navigation */
+.nav ul {
+    list-style: none; /* Removed empty list-style */
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav a {
+    color: rgb(116, 108, 108);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+/* Sections */
+.section {
+    padding: 2rem 0;
+}
+
+/* Hero section */
+.hero {
+    background-color: #702222;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero h2 {
+    margin: 0;
+}
+
+/* Row and Column layout */
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 30%;
+    background-color: #c23838;
+    padding: 1rem;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #26e74d;
+    color: rgb(216, 59, 59);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
